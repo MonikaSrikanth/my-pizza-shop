@@ -51,7 +51,7 @@ function CartSection() {
   };
 
   try {
-    await axios.post("https://my-pizza-shop.onrender.com", order);
+    await axios.post("https://my-pizza-shop.onrender.com/orders", order); 
     alert("Order placed successfully");
 
     // Clear cart
