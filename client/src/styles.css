@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Header Styling */
+header {
+    width: 100%;
+    padding: 15px 50px;
+    background: #120e5b; /* Dark background */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.container0 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span {
+    color: #a29dd6; /* Highlight color */
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #a29dd6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container0 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+}
+
+/*-------- Home Section --------*/
+#Home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('C:\Users\Monika\Desktop\my-pizza-shop\client\public\home page.jpg') no-repeat center center/cover;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.container1 {
+    color: #ddd;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    text-align: left; /* Center the text */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Centers horizontally */
+    justify-content: center; /* Centers vertically */
+    margin-left: 1rem;
+}
+.container1 h2 {
+    font-size: 5rem; /* Increase size */
+}
+
+.container1 h3 {
+    font-size: 3rem; /* Bigger subheading */
+}
+
+.container1 p {
+    font-size: 1.8rem; /* Bigger paragraph */
+}
+@media (max-width: 768px) {
+    .container1 {
+        width: 90%; /* Adjust width */
+        margin-left: 5%;
+    }
+
+    .container1 h2 {
+        font-size: 3rem;
+    }
+
+    .container1 h3 {
+        font-size: 2rem;
+    }
+
+    .container1 p {
+        font-size: 1.2rem;
+    }
+}
+
+/*--------Menu Section -------*/
+.container2 h2{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+#pizza-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.pizza-item{
+    background-color: #fdf0d8;
+    padding: 0.5rem;
+    width: 24rem;
+    height: 21rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.pizza-item img{
+    width: 15rem;
+    height: 13rem;
+    object-fit: cover;
+    margin-top: 0.5rem;
+}
+button{
+    padding: 0.1rem 0.1rem;
+    background-color: black;
+    color: #fff;
+}
+/*     ------ Cart Section --------     */
+.container4 h1 {
+    padding-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+#cart {
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.cart-table th, .cart-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+.name-input{
+    text-align: center;
+}
+
+.cart-table th {
+    background: lightblue;
+    font-weight: bold;
+}
+
+#total-price {
+    font-weight: bold;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.order-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+#place-order {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #28a745;
+    color: white;
+}
+#place-order:hover{
+    background-color: #218838;
+}
