@@ -72,7 +72,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('C:\Users\Monika\Desktop\my-pizza-shop\client\public\homepage.jpg') no-repeat center center/cover;
+    background: url('/homepage.jpg') no-repeat center center/cover;
 }
 
 .overlay {
